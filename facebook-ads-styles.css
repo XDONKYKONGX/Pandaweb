@@ -1,0 +1,297 @@
+/* Facebook Ads Page Specific Styles */
+.fb-hero {
+    background: black;
+    color: white;
+    padding: 120px 0 80px;
+}
+
+.fb-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.fb-hero .hero-content {
+    flex: 1;
+}
+
+.fb-hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.fb-hero .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    height:300px;
+    margin-top: 10%;
+}
+
+.fb-hero .hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.fb-hero .hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Benefits Section */
+.fb-benefits {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* Process Section */
+.fb-process {
+    padding: 100px 0;
+    background: black;
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 50px auto 0;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    background: var(--light-gray);
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.step-content h3 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+/* Packages Section */
+.fb-packages {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.package-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.package-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.package-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.package-card ul li i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.package-card ul li .fa-check {
+    color: var(--accent-color);
+}
+
+.package-card ul li .fa-times {
+    color: #ccc;
+}
+
+.package-button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.package-button:hover {
+    background: #ff5252;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.package-card.popular {
+    border: 2px solid var(--accent-color);
+}
+
+/* Results Section */
+.fb-results {
+    padding: 100px 0;
+    background: black;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.result-card {
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: var(--light-gray);
+}
+
+.result-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+/* CTA Section */
+.fb-cta {
+    padding: 100px 0;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.fb-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.fb-cta p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .fb-hero .container {
+        flex-direction: column;
+    }
+    
+    .fb-hero .hero-content {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fb-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .fb-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}

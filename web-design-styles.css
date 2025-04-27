@@ -1,0 +1,233 @@
+/* Web Design Page Specific Styles */
+.webdesign-hero {
+    background: black;
+    color: white;
+    padding: 120px 0 80px;
+}
+
+.webdesign-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-title {
+    color:grey;
+}
+
+.webdesign-hero .hero-content {
+    flex: 1;
+}
+
+.webdesign-hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.webdesign-hero .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.webdesign-hero .hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.webdesign-hero .hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Process Section */
+.design-process {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.step {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+/* Features Section */
+.design-features {
+    padding: 100px 0;
+    background: black;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.feature-card:hover i {
+    color: white;
+}
+
+/* Packages Section */
+.design-packages {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.package-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+
+.package-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.package-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.package-card ul li i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.package-card ul li .fa-check {
+    color: var(--accent-color);
+}
+
+.package-card ul li .fa-times {
+    color: #ccc;
+}
+
+.package-button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.package-button:hover {
+    background: #ff5252;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .webdesign-hero .container {
+        flex-direction: column;
+    }
+    
+    .webdesign-hero .hero-content {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .webdesign-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .webdesign-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}

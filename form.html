@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandaWebsites | Website Design Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="Pictures/Panda.png" alt="PandaWebsites Logo" class="logo-img">
+                <h1>Panda<span>Websites</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html #services">Services</a></li>
+                    <li><a href="index.html #portfolio">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html #contact">Contact</a></li>
+                    <li><a href="Website-design.html">Web Design</a></li>
+                    <li><a href="hosting.html">Hosting</a></li>
+                    <li><a href="seo.html">SEO</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Website Design Questionnaire</h2>
+            
+            <form id="websiteForm" action="https://formspree.io/f/xjvnqjqg" method="POST">
+                <div class="form-group">
+                    <label for="name">1. Name*</label>
+                    <input type="text" id="name" name="name" required autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">2. Email Address*</label>
+                    <input type="email" id="email" name="email" required autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">3. Phone Number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                    <label for="website">4. Current Website Address (if any)</label>
+                    <input type="url" id="website" name="website" placeholder="https://" autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                    <label>5. Websites you like the style of (provide URLs)</label>
+                    <input type="url" name="website1" placeholder="Website 1 URL">
+                    <input type="url" name="website2" placeholder="Website 2 URL">
+                    <input type="url" name="website3" placeholder="Website 3 URL">
+                    <input type="url" name="website4" placeholder="Website 4 URL">
+                    <input type="url" name="website5" placeholder="Website 5 URL">
+                </div>
+
+                <div class="form-group">
+                    <label>6. Do you have a company logo?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="has_logo" value="yes"> Yes</label>
+                        <label><input type="radio" name="has_logo" value="no"> No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="colors">7. Company colour/s (hex codes or names)</label>
+                    <input type="text" id="colors" name="colors" placeholder="e.g., #FF6B6B, #000000" autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                    <label>8. How many email addresses will your website need?</label>
+                    <select name="email_count">
+                        <option value="0">None</option>
+                        <option value="1-3">1-3</option>
+                        <option value="4-5">4-5</option>
+                        <option value="5+">More than 5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>9. Do you have pictures you would like on your website?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="has_pictures" value="yes"> Yes</label>
+                        <label><input type="radio" name="has_pictures" value="no"> No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>10. Do you have text content ready for your website?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="has_text" value="yes"> Yes</label>
+                        <label><input type="radio" name="has_text" value="no"> No</label>
+                        <label><input type="radio" name="has_text" value="some"> Some</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Submit Questionnaire</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a class="footer-logo" href="index.html">
+                    <img src="Pictures/Panda.png" alt="PandaWebsites Logo">
+                    <h3>Panda<span>Websites</span></h3>
+                </a>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html #services">Services</a></li>
+                        <li><a href="index.html #portfolio">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html #contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Website-design.html">Web Design</a></li>
+                        <li><a href="hosting.html">Hosting</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="facebook-ads.html">Facebook Ads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PandaWebsites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById('websiteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Thank you! Your questionnaire has been submitted.');
+                    form.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                alert('There was a problem submitting your form. Please try again later.');
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
